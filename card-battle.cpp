@@ -1,6 +1,7 @@
 /*----
   signature: main: void -> int
-  purpose:
+  purpose: Having an exciting battle of cards using function cardbattle between
+           two piles/vectors of gamecards.
 
   by: Joey Dugan
   last modified: 5/6/22
