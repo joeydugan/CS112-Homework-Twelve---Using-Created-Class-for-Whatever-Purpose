@@ -1,6 +1,6 @@
 /*----
   signature: main: void -> int
-  purpose: 
+  purpose:
 
   by: Joey Dugan
   last modified: 4/30/22
@@ -53,7 +53,7 @@ int main()
             cout << "Press enter to continue: ";
             getline(cin, pause);
             cout << endl;
-            
+
             // was having issues with using pop_front, but used erase vector method along with first item as a workaround
 
             pile2.erase(pile2.begin());
@@ -62,7 +62,7 @@ int main()
                 winner = card_battle(pile1[pile1_pos], pile2[pile2_pos]);
 
         }
-        
+
         else if(winner == "card2")
         {
             cout << pile2[pile2_pos].get_name() << " has won the battle against " << pile1[pile1_pos].get_name() << endl;
@@ -91,7 +91,7 @@ int main()
             if (pile1.size() != 0 && pile2.size() != 0)
                 winner = card_battle(pile1[pile1_pos], pile2[pile2_pos]);
         }
-        
+
     }
 
     // declaring a winner by measuring pile size

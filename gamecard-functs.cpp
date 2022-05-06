@@ -51,10 +51,13 @@ tests:
 by: Joey Dugan
 */
 
-int battle_type = rand_int(1,2);
+
 
 string card_battle(GameCard card1, GameCard card2)
 {
+
+    int battle_type = rand_int(1,2);
+
     switch (battle_type)
     {
 
@@ -110,6 +113,8 @@ string card_battle(GameCard card1, GameCard card2)
             return "both";
 
             battle_type = rand_int(1,2);
+
+            break;
 
     }
 }
